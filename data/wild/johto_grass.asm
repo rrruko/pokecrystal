@@ -1213,7 +1213,7 @@
 	db 3, RATTATA
 	db 2, RATTATA
 	db 3, HOOTHOOT
-	db 3, HOOTHOOT
+	db 3, MIMIKYU
 
 	map ROUTE_30
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite

@@ -133,6 +133,7 @@
 	db MEW
 	db MEWTWO
 	db MILTANK
+        db MIMIKYU
 	db MISDREAVUS
 	db MOLTRES
 	db MR__MIME
