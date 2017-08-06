@@ -810,12 +810,12 @@ if _CRYSTAL
 endc
 	db $ff
 
-StantlerEggMoves:
-	db REFLECT
+MimikyuEggMoves:
+	db LOVELY_KISS 
 	db SPITE
 	db DISABLE
-	db LIGHT_SCREEN
-	db BITE
+	db PERISH_SONG
+	db DESTINY_BOND 
 	db $ff
 
 TyrogueEggMoves:

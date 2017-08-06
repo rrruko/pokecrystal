@@ -56,7 +56,7 @@
 	map_header_2 Route28, ROUTE_28, $2c, WEST
 	connection west, SILVER_CAVE_OUTSIDE, SilverCaveOutside, -3, 6, 12, ROUTE_28
 
-	map_header_2 Route29, ROUTE_29, $5, NORTH | WEST | EAST
+	map_header_2 Route29, ROUTE_29, 5, NORTH | WEST | EAST
 	connection north, ROUTE_46, Route46, 10, 0, 10, ROUTE_29
 	connection west, CHERRYGROVE_CITY, CherrygroveCity, 0, 0, 9, ROUTE_29
 	connection east, NEW_BARK_TOWN, NewBarkTown, 0, 0, 9, ROUTE_29

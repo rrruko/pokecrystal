@@ -305,7 +305,7 @@ PokedexDataPointerTable: ; 0x44378
 	dw PhanpyPokedexEntry
 	dw DonphanPokedexEntry
 	dw Porygon2PokedexEntry
-	dw StantlerPokedexEntry
+	dw MimikyuPokedexEntry
 	dw SmearglePokedexEntry
 	dw TyroguePokedexEntry
 	dw HitmontopPokedexEntry
@@ -323,4 +323,3 @@ PokedexDataPointerTable: ; 0x44378
 	dw LugiaPokedexEntry
 	dw HoOhPokedexEntry
 	dw CelebiPokedexEntry
-        dw MimikyuPokedexEntry

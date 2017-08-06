@@ -234,7 +234,7 @@ const_value set 1
 	const PHANPY
 	const DONPHAN
 	const PORYGON2
-	const STANTLER
+  const MIMIKYU
 	const SMEARGLE
 	const TYROGUE
 	const HITMONTOP
@@ -251,7 +251,7 @@ const_value set 1
 	const TYRANITAR
 	const LUGIA
 	const HO_OH
-	const CELEBI
+  const CELEBI
 
 const_value SET const_value + -1
 
@@ -279,7 +279,7 @@ MON_CAUGHTDATA           EQUS "(PartyMon1CaughtData - PartyMon1)"
 MON_CAUGHTLEVEL          EQUS "(PartyMon1CaughtLevel - PartyMon1)"
 MON_CAUGHTTIME           EQUS "(PartyMon1CaughtTime - PartyMon1)"
 MON_CAUGHTGENDER         EQUS "(PartyMon1CaughtGender - PartyMon1)"
-MON_CAUGHTLOCATION       EQUS "(PartyMon1CaughtLocation - PartyMon1)"
+ON_CAUGHTLOCATION       EQUS "(PartyMon1CaughtLocation - PartyMon1)"
 MON_LEVEL                EQUS "(PartyMon1Level - PartyMon1)"
 MON_STATUS               EQUS "(PartyMon1Status - PartyMon1)"
 MON_HP                   EQUS "(PartyMon1HP - PartyMon1)"

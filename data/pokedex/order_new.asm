@@ -128,7 +128,7 @@
 	db NINETALES
 	db GROWLITHE
 	db ARCANINE
-	db STANTLER
+	db MIMIKYU 
 	db MARILL
 	db AZUMARILL
 	db DIGLETT
@@ -251,4 +251,3 @@
 	db MEWTWO
 	db MEW
 	db CELEBI
-        db MIMIKYU

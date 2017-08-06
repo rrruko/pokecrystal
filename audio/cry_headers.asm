@@ -233,7 +233,7 @@ KingdraCryHeader:     cry_header CRY_SLUGMA,      $2fb,  $100
 PhanpyCryHeader:      cry_header CRY_SENTRET,     $048,  $230
 DonphanCryHeader:     cry_header CRY_DONPHAN,     $000,  $1a0
 Porygon2CryHeader:    cry_header CRY_GIRAFARIG,   $073,  $240
-StantlerCryHeader:    cry_header CRY_AIPOM,      -$160,  $180
+MimikyuCryHeader:     cry_header CRY_BULBASAUR,   $0ce,  $240
 SmeargleCryHeader:    cry_header CRY_PICHU,      -$21a,  $1f0
 TyrogueCryHeader:     cry_header CRY_AIPOM,       $02c,  $108
 HitmontopCryHeader:   cry_header CRY_SLUGMA,      $000,  $100
@@ -251,7 +251,7 @@ TyranitarCryHeader:   cry_header CRY_RAIKOU,     -$100,  $180
 LugiaCryHeader:       cry_header CRY_TYPHLOSION,  $000,  $100
 HoOhCryHeader:        cry_header CRY_AIPOM,       $000,  $180
 CelebiCryHeader:      cry_header CRY_ENTEI,       $14a,  $111
-MimikyuCryHeader:     cry_header CRY_MARILL,      $11b,  $120
+CryHeader252:         cry_header CRY_NIDORAN_M,      0,     0
 CryHeader253:         cry_header CRY_NIDORAN_M,      0,     0
 CryHeader254:         cry_header CRY_NIDORAN_M,      0,     0
 CryHeader255:         cry_header CRY_NIDORAN_M,      0,     0

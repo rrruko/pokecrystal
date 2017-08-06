@@ -6,7 +6,8 @@ const_value set 2
 	const ROUTE29_FISHER
 	const ROUTE29_COOLTRAINER_M2
 	const ROUTE29_TUSCANY
-	const ROUTE29_POKE_BALL
+	const ROUTE29_POKE_BALL1
+	const ROUTE29_POKE_BALL2
 
 Route29_MapScriptHeader:
 .MapTriggers:
@@ -219,6 +220,9 @@ Route29FruitTree:
 Route29Potion:
 	itemball POTION
 
+Route29MasterBall:
+  itemball MASTER_BALL
+
 DudeMovementData1a:
 	step UP
 	step UP
@@ -420,27 +424,21 @@ Route29Sign2Text:
 	line "NEW BARK TOWN"
 	done
 
-Route29_MapEventHeader:
-	; filler
-	db 0, 0
+Route29_MapEventHeader:: db 0, 0
 
-.Warps:
-	db 1
-	warp_def $1, $1b, 3, ROUTE_29_46_GATE
+.Warps: db 1
+	warp_def 1, 27, 3, ROUTE_29_46_GATE
 
-.XYTriggers:
-	db 2
-	xy_trigger 1, $8, $35, $0, Route29Tutorial1, $0, $0
-	xy_trigger 1, $9, $35, $0, Route29Tutorial2, $0, $0
+.CoordEvents: db 2
+	xy_trigger 1, 8, 53, 0, Route29Tutorial1, 0, 0
+	xy_trigger 1, 9, 53, 0, Route29Tutorial2, 0, 0
 
-.Signposts:
-	db 2
+.BGEvents: db 2
 	signpost 7, 51, SIGNPOST_READ, Route29Sign1
 	signpost 5, 3, SIGNPOST_READ, Route29Sign2
 
-.PersonEvents:
-	db 8
-	person_event SPRITE_COOLTRAINER_M, 12, 50, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, (1 << 3) | PAL_OW_RED, PERSONTYPE_SCRIPT, 0, CatchingTutorialDudeScript, -1
+.ObjectEvents: db 9
+	person_event SPRITE_COOLTRAINER_M, 11, 49, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, (1 << 3) | PAL_OW_RED, PERSONTYPE_SCRIPT, 0, CatchingTutorialDudeScript, -1
 	person_event SPRITE_YOUNGSTER, 16, 27, SPRITEMOVEDATA_WALK_UP_DOWN, 1, 0, -1, -1, (1 << 3) | PAL_OW_GREEN, PERSONTYPE_SCRIPT, 0, Route29YoungsterScript, -1
 	person_event SPRITE_TEACHER, 11, 15, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 0, 1, -1, -1, (1 << 3) | PAL_OW_GREEN, PERSONTYPE_SCRIPT, 0, Route29TeacherScript, -1
 	person_event SPRITE_FRUIT_TREE, 2, 12, SPRITEMOVEDATA_ITEM_TREE, 0, 0, -1, -1, 0, PERSONTYPE_SCRIPT, 0, Route29FruitTree, -1
@@ -448,3 +446,5 @@ Route29_MapEventHeader:
 	person_event SPRITE_COOLTRAINER_M, 4, 13, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, (1 << 3) | PAL_OW_RED, PERSONTYPE_SCRIPT, 0, CooltrainerMScript_0x1a1031, -1
 	person_event SPRITE_TEACHER, 12, 29, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, 0, PERSONTYPE_SCRIPT, 0, TuscanyScript, EVENT_ROUTE_29_TUSCANY_OF_TUESDAY
 	person_event SPRITE_POKE_BALL, 2, 48, SPRITEMOVEDATA_ITEM_TREE, 0, 0, -1, -1, 0, PERSONTYPE_ITEMBALL, 0, Route29Potion, EVENT_ROUTE_29_POTION
+	person_event SPRITE_POKE_BALL, 7, 52, SPRITEMOVEDATA_ITEM_TREE, 0, 0, -1, -1, 0, PERSONTYPE_ITEMBALL, 0, Route29MasterBall, EVENT_ROUTE_29_MASTER_BALL
+

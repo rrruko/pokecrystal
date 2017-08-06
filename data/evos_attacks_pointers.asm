@@ -236,7 +236,7 @@ EvosAttacksPointers:: ; 0x425b1
 	dw PhanpyEvosAttacks
 	dw DonphanEvosAttacks
 	dw Porygon2EvosAttacks
-	dw StantlerEvosAttacks
+	dw MimikyuEvosAttacks
 	dw SmeargleEvosAttacks
 	dw TyrogueEvosAttacks
 	dw HitmontopEvosAttacks

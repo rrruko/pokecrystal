@@ -3146,15 +3146,14 @@ Porygon2EvosAttacks:
 	db 44, ZAP_CANNON
 	db 0 ; no more level-up moves
 
-StantlerEvosAttacks:
+MimikyuEvosAttacks:
 	db 0 ; no more evolutions
-	db 1, TACKLE
-	db 8, LEER
-	db 15, HYPNOSIS
-	db 23, STOMP
-	db 31, SAND_ATTACK
-	db 40, TAKE_DOWN
-	db 49, CONFUSE_RAY
+	db 1, LICK
+	db 5, SWEET_KISS
+	db 15, SING
+	db 23, IRON_TAIL
+	db 31, SHADOW_BALL
+	db 40, MEAN_LOOK
 	db 0 ; no more level-up moves
 
 SmeargleEvosAttacks:

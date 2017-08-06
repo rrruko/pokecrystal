@@ -4,12 +4,6 @@ Cry_Marill: ; f2d81
 	musicheader 1, 8, Cry_Marill_Ch8
 ; f2d8a
 
-Cry_Mimikyu: ; f2d81
-	musicheader 3, 5, Cry_Marill_Ch5
-	musicheader 1, 6, Cry_Marill_Ch6
-	musicheader 1, 8, Cry_Marill_Ch8
-; f2d8a
-
 Cry_Togepi: ; f2d8a
 	musicheader 2, 5, Cry_Togepi_Ch5
 	musicheader 1, 6, Cry_Togepi_Ch6

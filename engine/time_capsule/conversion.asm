@@ -561,7 +561,7 @@ Pokered_MonIndices: ; fb91c
 	db SNORLAX
 	db MAGIKARP
 	db PORYGON2
-	db STANTLER
+	db MIMIKYU 
 	db MUK
 	db SMEARGLE
 	db KINGLER

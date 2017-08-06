@@ -133,7 +133,7 @@
 	db MEW
 	db MEWTWO
 	db MILTANK
-        db MIMIKYU
+  db MIMIKYU
 	db MISDREAVUS
 	db MOLTRES
 	db MR__MIME
@@ -210,7 +210,6 @@
 	db SPEAROW
 	db SPINARAK
 	db SQUIRTLE
-	db STANTLER
 	db STARMIE
 	db STARYU
 	db STEELIX

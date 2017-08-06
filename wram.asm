@@ -216,7 +216,7 @@ TilePermissions:: ; c2fe
 
 	ds 1
 
-SECTION "wSpriteAnims", WRAM0 [$c300]
+SECTION "wSpriteAnims", WRAM0 ;[$c300]
 ; wc300 - wc313 is a 10x2 dictionary.
 ; keys: taken from third column of SpriteAnimSeqData
 ; values: VTiles
@@ -310,7 +310,7 @@ wc3fb:: ds 1
 wc3fc:: ds 4
 
 
-SECTION "Sprites", WRAM0 [$c400]
+SECTION "Sprites", WRAM0 ;[$c400]
 
 Sprites:: ; c400
 ; 4 bytes per sprite

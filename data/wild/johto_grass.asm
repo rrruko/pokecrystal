@@ -1202,17 +1202,16 @@
 	db 2, PIDGEY
 	db 2, SENTRET
 	db 3, PIDGEY
-	db 3, SENTRET
-	db 2, RATTATA
-	db 3, HOPPIP
-	db 3, HOPPIP
+	db 2, MIMIKYU
+	db 2, MIMIKYU
+	db 3, MIMIKYU
+	db 3, MIMIKYU
 	; nite
 	db 2, HOOTHOOT
-	db 2, RATTATA
-	db 3, HOOTHOOT
 	db 3, RATTATA
-	db 2, RATTATA
-	db 3, HOOTHOOT
+	db 2, MIMIKYU
+	db 2, MIMIKYU
+	db 3, MIMIKYU
 	db 3, MIMIKYU
 
 	map ROUTE_30
@@ -1424,9 +1423,9 @@
 	db 15, PIDGEY
 	; nite
 	db 13, SPINARAK
-	db 14, STANTLER
+	db 14, MIMIKYU
 	db 15, HOOTHOOT
-	db 16, STANTLER
+	db 16, MIMIKYU
 	db 15, NOCTOWL
 	db 15, ARIADOS
 	db 15, ARIADOS

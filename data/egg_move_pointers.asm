@@ -236,7 +236,7 @@ endc
 	dw PhanpyEggMoves
 	dw NoEggMoves
 	dw NoEggMoves
-	dw StantlerEggMoves
+	dw MimikyuEggMoves
 	dw NoEggMoves
 	dw TyrogueEggMoves
 	dw NoEggMoves
