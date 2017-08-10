@@ -852,7 +852,7 @@ wUnownPuzzleEnd::
 
 wPokedexDataStart::
 wPokedexOrder:: ds NUM_POKEMON +- 1
-wPokedexOrderEnd:: ds 6
+wPokedexOrderEnd:: ds 5
 wPokedexMetadata::
 wDexListingScrollOffset:: ; offset of the first displayed entry from the start
 wc7d0:: ds 1
@@ -2837,7 +2837,7 @@ PartyMonNicknamesEnd::
 
 
 PokedexCaught:: ; de99
-	flag_array NUM_POKEMON
+	flag_array NUM_POKEMON 
 EndPokedexCaught::
 
 PokedexSeen:: ; deb9

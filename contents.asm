@@ -28,7 +28,7 @@ EVOS_ATTACKS              EQU $10
 POKEDEX_ENTRIES_1         EQU $60
 POKEDEX_ENTRIES_2         EQU $6E
 POKEDEX_ENTRIES_3         EQU $73
-POKEDEX_ENTRIES_4         EQU $74
+POKEDEX_ENTRIES_4         EQU $7C
 
 
 ; engine/events.o
