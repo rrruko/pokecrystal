@@ -4,6 +4,7 @@ const_value set 2
 	const ELMSLAB_POKE_BALL1
 	const ELMSLAB_POKE_BALL2
 	const ELMSLAB_POKE_BALL3
+	const ELMSLAB_POKE_BALL4
 	const ELMSLAB_OFFICER
 
 ElmsLab_MapScriptHeader:
@@ -246,6 +247,34 @@ ChikoritaPokeBallScript:
 	givepoke CHIKORITA, 5, BERRY
 	closetext
 	applymovement PLAYER, AfterChikoritaMovement
+	jump ElmDirectionsScript
+
+DogPokeBallScript:
+  checkevent EVENT_GOT_A_POKEMON_FROM_ELM
+	iftrue LookAtElmPokeBallScript
+	spriteface ELMSLAB_ELM, DOWN
+	refreshscreen $0
+	pokepic RHYHORN
+	cry PSYDUCK
+	waitbutton
+	closepokepic
+	opentext
+	writetext TakeDogText
+	yesorno
+	iffalse DidntChooseStarterScript
+	disappear ELMSLAB_POKE_BALL4
+	setevent EVENT_GOT_DOG_FROM_ELM
+	writetext ChoseStarterText
+	buttonsound
+	waitsfx
+	pokenamemem DOG, $0
+	writetext ReceivedStarterText
+	playsound SFX_CAUGHT_MON
+	waitsfx
+	buttonsound
+	givepoke DOG, 100, BERSERK_GENE
+	closetext
+	applymovement PLAYER, AfterDogMovement
 	jump ElmDirectionsScript
 
 DidntChooseStarterScript:
@@ -730,6 +759,15 @@ AfterChikoritaMovement:
 	turn_head UP
 	step_end
 
+AfterDogMovement:
+  step LEFT
+	step LEFT
+	step LEFT
+	step LEFT
+	step UP
+	turn_head UP
+	step_end
+
 ElmText_Intro:
 	text "ELM: <PLAY_G>!"
 	line "There you are!"
@@ -879,6 +917,12 @@ TakeChikoritaText:
 	text "ELM: So, you like"
 	line "CHIKORITA, the"
 	cont "grass #MON?"
+	done
+
+TakeDogText:
+  text "ELM: That's DOG,"
+	line "the DOG #MON."
+	cont "It's a dog."
 	done
 
 DidntChooseStarterText:
@@ -1421,4 +1465,5 @@ ElmsLab_MapEventHeader:
 	person_event SPRITE_POKE_BALL, 3, 6, SPRITEMOVEDATA_ITEM_TREE, 0, 0, -1, -1, 0, PERSONTYPE_SCRIPT, 0, CyndaquilPokeBallScript, EVENT_CYNDAQUIL_POKEBALL_IN_ELMS_LAB
 	person_event SPRITE_POKE_BALL, 3, 7, SPRITEMOVEDATA_ITEM_TREE, 0, 0, -1, -1, 0, PERSONTYPE_SCRIPT, 0, TotodilePokeBallScript, EVENT_TOTODILE_POKEBALL_IN_ELMS_LAB
 	person_event SPRITE_POKE_BALL, 3, 8, SPRITEMOVEDATA_ITEM_TREE, 0, 0, -1, -1, 0, PERSONTYPE_SCRIPT, 0, ChikoritaPokeBallScript, EVENT_CHIKORITA_POKEBALL_IN_ELMS_LAB
+  person_event SPRITE_POKE_BALL, 3, 9, SPRITEMOVEDATA_ITEM_TREE, 0, 0, -1, -1, 0, PERSONTYPE_SCRIPT, 0, DogPokeBallScript, EVENT_DOG_POKEBALL_IN_ELMS_LAB
 	person_event SPRITE_OFFICER, 3, 5, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, (1 << 3) | PAL_OW_BLUE, PERSONTYPE_SCRIPT, 0, CopScript, EVENT_COP_IN_ELMS_LAB

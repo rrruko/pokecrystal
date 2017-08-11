@@ -250,3 +250,4 @@ AnimationExtraPointers:
 	dw LugiaAnimationExtra
 	dw HoOhAnimationExtra
 	dw CelebiAnimationExtra
+  dw DogAnimationExtra
