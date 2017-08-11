@@ -1,4 +1,4 @@
-	db DODUO ; 084
+	db DODUO  ; 084
 
 	db  35,  85,  45,  75,  35,  35
 	;   hp  atk  def  spd  sat  sdf

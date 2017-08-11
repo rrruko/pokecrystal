@@ -234,7 +234,7 @@ const_value set 1
 	const PHANPY
 	const DONPHAN
 	const PORYGON2
-        const MIMIKYU
+	const MIMIKYU
 	const SMEARGLE
 	const TYROGUE
 	const HITMONTOP
@@ -251,8 +251,8 @@ const_value set 1
 	const TYRANITAR
 	const LUGIA
 	const HO_OH
-        const CELEBI
-        const DOG
+	const CELEBI
+	const DOG
 
 const_value SET const_value + -1
 

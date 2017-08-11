@@ -265,6 +265,7 @@ MonMenuIcons: ; 8eac4
 	db ICON_LUGIA        ; LUGIA
 	db ICON_HO_OH        ; HO_OH
 	db ICON_HUMANSHAPE   ; CELEBI
+	db ICON_FOX          ; DOG
 
 IconPointers:
 	dw NullIcon

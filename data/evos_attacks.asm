@@ -3395,3 +3395,10 @@ CelebiEvosAttacks:
 	db 40, BATON_PASS
 	db 50, PERISH_SONG
 	db 0 ; no more level-up moves
+
+DogEvosAttacks:
+  db EVOLVE_LEVEL, 10, MR__MIME
+	db 0
+	db 1, SACRED_FIRE
+	db 1, AEROBLAST
+  db 0
