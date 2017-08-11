@@ -722,8 +722,8 @@ UnownYBackpic:       INCBIN "gfx/pics/unown_y/back.2bpp.lz"
 UnownPBackpic:       INCBIN "gfx/pics/unown_p/back.2bpp.lz"
 UnownIBackpic:       INCBIN "gfx/pics/unown_i/back.2bpp.lz"
 UnownRBackpic:       INCBIN "gfx/pics/unown_r/back.2bpp.lz"
-DogFrontpic:         INCBIN "gfx/pics/doduo/front.animated.2bpp.lz"
-DogBackpic:          INCBIN "gfx/pics/doduo/back.2bpp.lz"
+DogFrontpic:         INCBIN "gfx/pics/dog/front.animated.2bpp.lz"
+DogBackpic:          INCBIN "gfx/pics/dog/back.2bpp.lz"
 ; 1669d3
 
 
