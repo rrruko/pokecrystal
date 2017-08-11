@@ -38,7 +38,7 @@ ItemEffects: ; e73c
 	dw FireStone
 	dw Thunderstone
 	dw WaterStone
-	dw Item19
+	dw KamiSama
 	dw HPUp
 	dw Protein
 	dw Iron
@@ -1220,6 +1220,12 @@ SunStone: ; ee0f
 	ret
 ; ee3d
 
+KamiSama:
+  callba KamiSamaFunction
+	ret
+  ; text "Moshi moshi!"
+  ; line "Jesus desu!"
+  ; done
 
 HPUp:
 Protein:

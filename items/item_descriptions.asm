@@ -37,7 +37,7 @@ ItemDescriptions:
 	dw BrightpowderDesc
 	dw GreatBallDesc
 	dw PokeBallDesc
-	dw TeruSama1Desc
+	dw KamiSamaDesc
 	dw BicycleDesc
 	dw MoonStoneDesc
 	dw AntidoteDesc
@@ -56,7 +56,7 @@ ItemDescriptions:
 	dw FireStoneDesc
 	dw ThunderStoneDesc
 	dw WaterStoneDesc
-	dw TeruSama2Desc
+	dw KamiSamaDesc
 	dw HPUpDesc
 	dw ProteinDesc
 	dw IronDesc
@@ -308,8 +308,9 @@ PokeBallDesc:
 	db   "An item for catch-"
 	next "ing #MON.@"
 
-TeruSama1Desc:
-	db   "?@"
+KamiSamaDesc:
+	db   "Magical device to"
+	next "talk to Kami-sama.@"
 
 BicycleDesc:
 	db   "A collapsible bike"
