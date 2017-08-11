@@ -1,4 +1,4 @@
-	db DOG  ; 084
+	db DOG  ; 252
 
 	db 106, 110,  90, 130, 154,  90
 	;   hp  atk  def  spd  sat  sdf
