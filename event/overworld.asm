@@ -1836,6 +1836,33 @@ GotOffTheBikeText: ; 0xd181
 	text_jump UnknownText_0x1c09c7
 	db "@"
 
+KamiSamaFunction:
+	call .DoKamiSama
+	and $7f
+	ld [wFieldMoveSucceeded], a
+	ret
+
+.DoKamiSama:
+	ld hl, Script_KamiSama
+	call QueueScript
+	ret
+
+Script_KamiSama:
+	writetext KamiSamaText
+	waitbutton
+	closetext
+	special ReplaceKrisSprite
+	end
+
+KamiSamaText:
+	text_jump KamiSamaText1
+	db "@"
+
+KamiSamaText1:
+	text "Moshi moshi?"
+	line "Jesus desu!"
+	done
+
 TryCutOW:: ; d186
 	ld d, CUT
 	call CheckPartyMove
