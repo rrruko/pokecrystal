@@ -559,13 +559,13 @@
 	db 6, PARAS
 	db 6, PARAS
 	; nite
-	db 5, ODDISH
-	db 5, VENONAT
 	db 7, ODDISH
+	db 5, VENONAT
+	db 7, PARAS
 	db 7, PSYDUCK
-	db 7, HOOTHOOT
-	db 6, PARAS
-	db 6, PARAS
+	db 5, HOOTHOOT
+	db 6, MIMIKYU
+	db 6, MIMIKYU
 
 	map MOUNT_MORTAR_1F_OUTSIDE
 	db 6 percent, 6 percent, 6 percent ; encounter rates: morn/day/nite
@@ -1202,17 +1202,18 @@
 	db 2, PIDGEY
 	db 2, SENTRET
 	db 3, PIDGEY
-	db 2, MIMIKYU
-	db 2, MIMIKYU
-	db 3, MIMIKYU
-	db 3, MIMIKYU
+	db 3, SENTRET
+	db 2, RATTATA
+	db 3, HOPPIP
+	db 3, HOPPIP
 	; nite
 	db 2, HOOTHOOT
+	db 2, RATTATA
+        db 3, HOOTHOOT
 	db 3, RATTATA
-	db 2, MIMIKYU
-	db 2, MIMIKYU
-	db 3, MIMIKYU
-	db 3, MIMIKYU
+	db 2, RATTATA
+	db 3, HOOTHOOT
+	db 3, HOOTHOOT
 
 	map ROUTE_30
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
@@ -1225,7 +1226,7 @@
 	db 4, HOPPIP
 	db 4, HOPPIP
 	; day
-	db 3, PIDGEY
+	db 3, PIDGEY 
 	db 3, CATERPIE
 	db 4, CATERPIE
 	db 4, PIDGEY
@@ -1423,9 +1424,9 @@
 	db 15, PIDGEY
 	; nite
 	db 13, SPINARAK
-	db 14, MIMIKYU
+	db 14, VULPIX
 	db 15, HOOTHOOT
-	db 16, MIMIKYU
+	db 16, VULPIX 
 	db 15, NOCTOWL
 	db 15, ARIADOS
 	db 15, ARIADOS

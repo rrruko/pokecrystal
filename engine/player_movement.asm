@@ -281,6 +281,9 @@ DoPlayerMovement:: ; 80000
 	call CheckIceTile
 	jr nc, .ice
 
+	call .RunCheck
+	jr z, .fast
+
 ; Downhill riding is slower when not moving down.
 	call .BikeCheck
 	jr nz, .walk
@@ -318,6 +321,17 @@ DoPlayerMovement:: ; 80000
 
 ; unused?
 	xor a
+	ret
+
+; Routine by Victoria Lacroix
+; https://github.com/VictoriaLacroix/pokecrystal/commit/ed7f525d642cb02e84e856f2e506d2a6425d95db
+.RunCheck:
+	ld a, [PlayerState]
+	and a ; cp PLAYER_NORMAL
+	ret nz
+	ld a, [hJoypadDown]
+	and B_BUTTON
+	cp B_BUTTON
 	ret
 
 .bump

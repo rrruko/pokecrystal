@@ -1223,9 +1223,6 @@ SunStone: ; ee0f
 KamiSama:
   callba KamiSamaFunction
 	ret
-  ; text "Moshi moshi!"
-  ; line "Jesus desu!"
-  ; done
 
 HPUp:
 Protein:
