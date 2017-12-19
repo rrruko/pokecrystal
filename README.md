@@ -14,3 +14,9 @@ To set up the repository, see [INSTALL.md](INSTALL.md).
 [irc]: https://kiwiirc.com/client/irc.freenode.net/?#pret
 [travis]: https://travis-ci.org/pret/pokecrystal
 [travis-badge]: https://travis-ci.org/pret/pokecrystal.svg?branch=master
+
+## Note
+
+To edit maps, you will need [crowdmap](https://github.com/yenatz/crowdmap.git).
+Run it from the pokecrystal directory with `python2 crowdmap/server.py`; simply
+saying `python` may not work.
