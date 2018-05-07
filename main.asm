@@ -3891,7 +3891,7 @@ PrintTempMonStats: ; 50b7b
 	next "DEFENSE"
 	next "SPCL.ATK"
 	next "SPCL.DEF"
-	next "SPEED"
+	next "HEART"
 	next "@"
 
 GetGender: ; 50bdd

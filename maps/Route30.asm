@@ -303,11 +303,12 @@ YoungsterJoey1AfterText:
 	done
 
 YoungsterMikeySeenText:
-	text "You're a #MON"
-	line "trainer, right?"
+	text "Do you know why"
+	line "me and my #MON"
+	cont "always win?"
 
-	para "Then you have to"
-	line "battle!"
+	para "It's because we"
+	line "obey the Lord!"
 	done
 
 YoungsterMikeyBeatenText:
