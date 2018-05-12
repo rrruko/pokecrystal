@@ -1182,6 +1182,30 @@ _OakText1::
 
 	para "People call me the"
 	line "#MON PROF."
+
+	para "The year is 20404."
+
+	para "Mad science was"
+	line "used by the"
+	cont "#MON"
+
+	para "government to"
+	line "create 1000"
+	cont "timelines."
+
+	para "But there was a"
+	line "problem."
+
+	para "Each timeline"
+	line "created an"
+	cont "unstoppable"
+	cont "ancient crystal."
+
+	para "You're the only"
+	line "boy who can find"
+	cont "the 1000 crystals"
+
+	para "And save #MON!"
 	prompt
 
 _OakText2::
