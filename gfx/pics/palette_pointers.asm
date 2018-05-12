@@ -510,12 +510,8 @@ HoOhShinyPalette:       INCLUDE "gfx/pics/ho_oh/shiny.pal"
 CelebiPalette:          INCLUDE "gfx/pics/celebi/normal.pal"
 CelebiShinyPalette:     INCLUDE "gfx/pics/celebi/shiny.pal"
 
-; 252
-	RGB 30, 26, 11
-	RGB 23, 16, 00
-; 252 shiny
-	RGB 30, 26, 11
-	RGB 23, 16, 00
+DogPalette:      INCLUDE "gfx/pics/aerodactyl/normal.pal"
+DogShinyPalette: INCLUDE "gfx/pics/aerodactyl/shiny.pal"
 
 ; Egg
 	RGB 30, 26, 11
