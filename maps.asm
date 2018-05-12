@@ -185,6 +185,7 @@ INCLUDE "maps/Route26HealSpeechHouse.asm"
 INCLUDE "maps/Route26DayofWeekSiblingsHouse.asm"
 INCLUDE "maps/Route27SandstormHouse.asm"
 INCLUDE "maps/Route2946Gate.asm"
+INCLUDE "maps/NewBarkWitchHouse.asm"
 
 
 SECTION "Map Scripts 10", ROMX, BANK[MAP_SCRIPTS_10]

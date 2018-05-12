@@ -196,6 +196,7 @@ CherrygroveGymSpeechHouse_BlockData:
 GuideGentsHouse_BlockData:
 CherrygroveEvolutionSpeechHouse_BlockData:
 Route30BerrySpeechHouse_BlockData:
+NewBarkWitchHouse_BlockData:
 	INCBIN "maps/House1.blk"
 
 SafariZoneFuchsiaGateBeta_BlockData:
