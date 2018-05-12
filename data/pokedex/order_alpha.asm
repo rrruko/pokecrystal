@@ -41,6 +41,7 @@
 	db DITTO
 	db DODRIO
 	db DODUO
+	db DOG
 	db DONPHAN
 	db DRAGONAIR
 	db DRAGONITE
