@@ -1427,6 +1427,19 @@ YoungsterGroup:
 	db $ff ; end
 
 ; ================
+
+
+	; YOUNGSTER (15)
+	db "MYOTISMON@"
+	db 0 ; normal
+
+	; party
+
+	db 15, LEDYBA
+
+	db $ff ; end
+
+; ================
 ; ================================
 
 

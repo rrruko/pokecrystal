@@ -208,6 +208,17 @@ TuscanyNotTuesdayScript:
 	closetext
 	end
 
+TrainerLordMyotismon:
+	trainer EVENT_BEAT_LORD_MYOTISMON, YOUNGSTER, MYOTISMON, LordMyotismonSeenText, LordMyotismonBeatenText, 0, .Script
+
+.Script:
+	end_if_just_battled
+	opentext
+	writetext LordMyotismonAfterText
+	waitbutton
+	closetext
+	end
+
 Route29Sign1:
 	jumptext Route29Sign1Text
 
@@ -256,6 +267,18 @@ DudeMovementData2b:
 	step DOWN
 	step DOWN
 	step_end
+
+LordMyotismonSeenText:
+	text "Mufufu…"
+        done
+
+LordMyotismonBeatenText:
+	text "Gack!!!"
+	done
+
+LordMyotismonAfterText:
+	text "..."
+        done
 
 UnknownText_0x1a10a7:
 	text "#MON hide in"
@@ -453,7 +476,7 @@ Route29_MapEventHeader:: db 0, 0
 	signpost 5, 3, SIGNPOST_READ, Route29Sign2
 	signpost 9, 47, SIGNPOST_READ, Route29Sign3
 
-.ObjectEvents: db 9
+.ObjectEvents: db 10
 	person_event SPRITE_COOLTRAINER_M, 11, 49, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, (1 << 3) | PAL_OW_RED, PERSONTYPE_SCRIPT, 0, CatchingTutorialDudeScript, -1
 	person_event SPRITE_YOUNGSTER, 16, 27, SPRITEMOVEDATA_WALK_UP_DOWN, 1, 0, -1, -1, (1 << 3) | PAL_OW_GREEN, PERSONTYPE_SCRIPT, 0, Route29YoungsterScript, -1
 	person_event SPRITE_TEACHER, 11, 15, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 0, 1, -1, -1, (1 << 3) | PAL_OW_GREEN, PERSONTYPE_SCRIPT, 0, Route29TeacherScript, -1
@@ -463,3 +486,4 @@ Route29_MapEventHeader:: db 0, 0
 	person_event SPRITE_TEACHER, 12, 29, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, 0, PERSONTYPE_SCRIPT, 0, TuscanyScript, EVENT_ROUTE_29_TUSCANY_OF_TUESDAY
 	person_event SPRITE_POKE_BALL, 2, 48, SPRITEMOVEDATA_ITEM_TREE, 0, 0, -1, -1, 0, PERSONTYPE_ITEMBALL, 0, Route29Potion, EVENT_ROUTE_29_POTION
 	person_event SPRITE_POKE_BALL, 7, 52, SPRITEMOVEDATA_ITEM_TREE, 0, 0, -1, -1, 0, PERSONTYPE_ITEMBALL, 0, Route29MasterBall, EVENT_ROUTE_29_MASTER_BALL
+	person_event SPRITE_YOUNGSTER, 10, 47, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, (1 << 3) | PAL_OW_BLUE, PERSONTYPE_TRAINER, 1, TrainerLordMyotismon, -1

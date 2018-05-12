@@ -90,6 +90,7 @@ KRIS EQU __enum__
 	const JASON
 	const JOEY4
 	const JOEY5
+	const MYOTISMON
 
 	trainerclass SCHOOLBOY ; 17
 	const JACK1
