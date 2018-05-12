@@ -243,21 +243,22 @@
 	add_tm FIRE_PUNCH   ; $F0
 	add_tm FURY_CUTTER  ; $F1
 	add_tm NIGHTMARE    ; $F2
+	add_tm EVIL_ATTACK  ; $F3
 NUM_TMS = const_value - TM01 - 2
 
-	add_hm CUT          ; $F3
-	add_hm FLY          ; $F4
-	add_hm SURF         ; $F5
-	add_hm STRENGTH     ; $F6
-	add_hm FLASH        ; $F7
-	add_hm WHIRLPOOL    ; $F8
-	add_hm WATERFALL    ; $F9
+	add_hm CUT          ; $F4
+	add_hm FLY          ; $F5
+	add_hm SURF         ; $F6
+	add_hm STRENGTH     ; $F7
+	add_hm FLASH        ; $F8
+	add_hm WHIRLPOOL    ; $F9
+	add_hm WATERFALL    ; $FA
 NUM_HMS = const_value - HM01
-	const HM_08         ; $FA
+	const HM_08         ; $FB
 
-	add_mt FLAMETHROWER
-	add_mt THUNDERBOLT
-	add_mt ICE_BEAM
+	add_mt FLAMETHROWER ; $FC
+	add_mt THUNDERBOLT  ; $FD
+	add_mt ICE_BEAM     ; $FE
 
 ITEM_FROM_MEM EQU $ff
 

@@ -251,7 +251,7 @@ BattleAnimations:: ; c906f
 	dw BattleAnim_RockSmash
 	dw BattleAnim_Whirlpool
 	dw BattleAnim_BeatUp
-	dw BattleAnim_252
+	dw BattleAnim_RainDance
 	dw BattleAnim_253
 	dw BattleAnim_254
 	dw BattleAnim_SweetScent2
@@ -278,6 +278,7 @@ BattleAnimations:: ; c906f
 	dw BattleAnim_Wobble
 	dw BattleAnim_Shake
 	dw BattleAnim_HitConfusion
+	dw BattleAnim_Zom
 ; c929b
 
 BattleAnim_0: ; c929b
@@ -573,6 +574,16 @@ BattleAnim_Par: ; c9508
 	anim_wait 128
 	anim_ret
 ; c951e
+
+BattleAnim_Zom:
+	anim_1gfx ANIM_GFX_POISON
+	anim_sound 0, 0, SFX_POISON
+	anim_obj ANIM_OBJ_SKULL,   8, 0,   7, 0, $0
+	anim_wait 8
+	anim_sound 0, 0, SFX_POISON
+	anim_obj ANIM_OBJ_SKULL,   6, 0,   7, 0, $0
+	anim_wait 8
+	anim_ret
 
 BattleAnim_InLove: ; c951e
 	anim_1gfx ANIM_GFX_OBJECTS

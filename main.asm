@@ -4185,6 +4185,9 @@ PlaceNonFaintStatus: ; 50d2e
 	ld de, ParString
 	bit PAR, a
 	jr nz, .place
+	ld de, ZomString
+	bit ZOM, a
+	jr nz, .place
 	ld de, SlpString
 	and SLP
 	jr z, .no_status
@@ -4203,6 +4206,7 @@ PsnString: db "PSN@"
 BrnString: db "BRN@"
 FrzString: db "FRZ@"
 ParString: db "PAR@"
+ZomString: db "ZOM@"
 
 ListMoves: ; 50d6f
 ; List moves at hl, spaced every [Buffer1] tiles.

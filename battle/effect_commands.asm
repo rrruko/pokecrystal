@@ -5413,6 +5413,45 @@ Defrost: ; 360dd
 
 ; 36102
 
+BattleCommand_ZombieTarget:
+	xor a
+	ld [wNumHits], a
+	call CheckSubstituteOpp
+	ret nz
+	ld a, BATTLE_VARS_STATUS_OPP
+	call GetBattleVarAddr
+	bit ZOM, a
+	jr nz, .alreadyzombie
+	ld a, [TypeModifier]
+	and $7f
+	ret z
+	call SafeCheckSafeguard
+	ret nz
+	ld a, BATTLE_VARS_STATUS_OPP
+	call GetBattleVarAddr
+	set ZOM, [hl]
+	call UpdateOpponentInParty
+	ld de, ANIM_ZOM
+	call PlayOpponentBattleAnim
+	call RefreshBattleHuds
+
+	ld hl, WasZombiedText
+	call StdBattleTextBox
+
+	call OpponentCantMove
+	call EndRechargeOpp
+	ld hl, wEnemyJustGotFrozen
+	ld a, [hBattleTurn]
+	and a
+	jr z, .finish
+	ld hl, wPlayerJustGotFrozen
+.finish
+	ld [hl], $1
+	ret
+.alreadyzombie
+	call AnimateFailedMove
+	ld hl, AlreadyZombiedText
+	jp StdBattleTextBox
 
 BattleCommand_FreezeTarget: ; 36102
 ; freezetarget

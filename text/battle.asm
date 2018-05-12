@@ -845,6 +845,16 @@ WasFrozenText: ; 0x8125d
 	prompt
 ; 0x81272
 
+WasZombiedText:
+        text "<TARGET>"
+        line "was zombied! Uh-oh!"
+        prompt
+
+AlreadyZombiedText:
+        text "<TARGET>'s"
+        line "already zombied!"
+        prompt
+
 WontRiseAnymoreText: ; 0x81272
 	text "<USER>'s"
 	line "@"

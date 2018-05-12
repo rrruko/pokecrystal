@@ -67,6 +67,27 @@ DoSleep:
 	sleeptarget
 	endmove
 
+DoZombie:
+        checkobedience
+        usedmovetext
+        doturn
+        critical
+        damagestats
+        damagecalc
+        stab
+        damagevariation
+        checkhit
+        effectchance
+        hittarget
+        failuretext
+        checkfaint
+        criticaltext
+        supereffectivetext
+        checkdestinybond
+        buildopponentrage
+        zombietarget
+        endmove
+
 PoisonSting:
 Smog:
 Sludge:

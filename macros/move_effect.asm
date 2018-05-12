@@ -180,6 +180,7 @@ endm
 	command supereffectivelooptext  ; ad
 	command startloop               ; ae
 	command curl                    ; af
+	command zombietarget
 
 	enum_start -1, -1
 	command endmove

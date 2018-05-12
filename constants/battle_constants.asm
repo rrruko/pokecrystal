@@ -97,8 +97,9 @@ const_value SET 3
 	const BRN
 	const FRZ
 	const PAR
+	const ZOM
 
-ALL_STATUS EQU (1 << PSN) + (1 << BRN) + (1 << FRZ) + (1 << PAR) + SLP
+ALL_STATUS EQU (1 << PSN) + (1 << BRN) + (1 << FRZ) + (1 << PAR) + (1 << ZOM) + SLP
 
 ; substatus
 	enum_start 7, -1
@@ -321,6 +322,7 @@ SUBSTATUS_CURLED       EQU 0
 	const EFFECT_BEAT_UP
 	const EFFECT_FLY
 	const EFFECT_DEFENSE_CURL
+	const EFFECT_ZOMBIE_HIT
 
 ; Battle vars used in home/battle.asm
 	const_def

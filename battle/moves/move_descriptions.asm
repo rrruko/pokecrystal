@@ -250,14 +250,16 @@
 	dw RockSmashDescription
 	dw WhirlpoolDescription
 	dw BeatUpDescription
-	dw MoveFCDescription
+	dw EvilAttackDescription
 	dw MoveFDDescription
 	dw MoveFEDescription
 	dw MoveFFDescription
 	dw Move00Description
 ; 2cd52
 
-MoveFCDescription:
+EvilAttackDescription:
+        db   "An evil attack."
+        next "Makes zombies.@"
 MoveFDDescription:
 MoveFEDescription:
 MoveFFDescription:

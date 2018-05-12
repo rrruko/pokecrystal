@@ -3401,4 +3401,5 @@ DogEvosAttacks:
 	db 0
 	db 1, SACRED_FIRE
 	db 1, AEROBLAST
+	db 2, EVIL_ATTACK
   db 0
