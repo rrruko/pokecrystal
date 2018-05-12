@@ -269,12 +269,8 @@ SantosNotSaturdayText:
 	done
 
 BlackthornCooltrainerF2Text:
-	text "Wow, you came"
-	line "through the ICE"
-	cont "PATH?"
-
-	para "You must be a real"
-	line "hotshot trainer!"
+	text "You're not"
+	line "special, kid."
 	done
 
 BlackthornCitySignText:
@@ -314,42 +310,37 @@ BlackthornCityTrainerTipsText:
 	cont "problem."
 	done
 
-BlackthornCity_MapEventHeader:
-	; filler
-	db 0, 0
+BlackthornCity_MapEventHeader:: db 0, 0
 
-.Warps:
-	db 8
-	warp_def $b, $12, 1, BLACKTHORN_GYM_1F
-	warp_def $15, $d, 1, BLACKTHORN_DRAGON_SPEECH_HOUSE
-	warp_def $17, $1d, 1, BLACKTHORN_EMYS_HOUSE
-	warp_def $1d, $f, 2, BLACKTHORN_MART
-	warp_def $1d, $15, 1, BLACKTHORN_POKECENTER_1F
-	warp_def $1f, $9, 1, MOVE_DELETERS_HOUSE
-	warp_def $9, $24, 2, ICE_PATH_1F
-	warp_def $1, $14, 1, DRAGONS_DEN_1F
+.Warps: db 8
+	warp_def 21, 13, 1, BLACKTHORN_GYM_1F
+	warp_def 17, 17, 1, BLACKTHORN_DRAGON_SPEECH_HOUSE
+	warp_def 23, 29, 1, BLACKTHORN_EMYS_HOUSE
+	warp_def 29, 15, 2, BLACKTHORN_MART
+	warp_def 11, 29, 1, BLACKTHORN_POKECENTER_1F
+	warp_def 29, 21, 1, MOVE_DELETERS_HOUSE
+	warp_def 9, 36, 2, ICE_PATH_1F
+	warp_def 3, 22, 1, DRAGONS_DEN_1F
 
-.XYTriggers:
-	db 0
+.CoordEvents: db 0
 
-.Signposts:
-	db 7
-	signpost 24, 34, SIGNPOST_READ, BlackthornCitySign
-	signpost 13, 17, SIGNPOST_READ, BlackthornGymSign
-	signpost 31, 7, SIGNPOST_READ, MoveDeletersHouseSign
-	signpost 3, 21, SIGNPOST_READ, DragonDensSign
-	signpost 25, 5, SIGNPOST_READ, BlackthornCityTrainerTips
+.BGEvents: db 7
+	signpost 19, 31, SIGNPOST_READ, BlackthornCitySign
+	signpost 21, 11, SIGNPOST_READ, BlackthornGymSign
+	signpost 29, 19, SIGNPOST_READ, MoveDeletersHouseSign
+	signpost 4, 20, SIGNPOST_READ, DragonDensSign
+	signpost 23, 7, SIGNPOST_READ, BlackthornCityTrainerTips
 	signpost 29, 16, SIGNPOST_READ, BlackthornCityMartSign
-	signpost 29, 22, SIGNPOST_READ, BlackthornCityPokeCenterSign
+	signpost 11, 30, SIGNPOST_READ, BlackthornCityPokeCenterSign
 
-.PersonEvents:
-	db 9
-	person_event SPRITE_SUPER_NERD, 12, 18, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, (1 << 3) | PAL_OW_RED, PERSONTYPE_SCRIPT, 0, BlackthornSuperNerdScript, EVENT_BLACKTHORN_CITY_SUPER_NERD_BLOCKS_GYM
-	person_event SPRITE_SUPER_NERD, 12, 19, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, (1 << 3) | PAL_OW_RED, PERSONTYPE_SCRIPT, 0, BlackthornSuperNerdScript, EVENT_BLACKTHORN_CITY_SUPER_NERD_DOES_NOT_BLOCK_GYM
-	person_event SPRITE_GRAMPS, 2, 20, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, PERSONTYPE_SCRIPT, 0, BlackthornGramps1Script, EVENT_BLACKTHORN_CITY_GRAMPS_BLOCKS_DRAGONS_DEN
-	person_event SPRITE_GRAMPS, 2, 21, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, PERSONTYPE_SCRIPT, 0, BlackthornGramps2Script, EVENT_BLACKTHORN_CITY_GRAMPS_NOT_BLOCKING_DRAGONS_DEN
-	person_event SPRITE_BLACK_BELT, 31, 24, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 0, 1, -1, -1, (1 << 3) | PAL_OW_BLUE, PERSONTYPE_SCRIPT, 0, BlackthornBlackBeltScript, -1
+.ObjectEvents: db 9
+	person_event SPRITE_SUPER_NERD, 4, 24, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, (1 << 3) | PAL_OW_RED, PERSONTYPE_SCRIPT, 0, BlackthornSuperNerdScript, EVENT_BLACKTHORN_CITY_SUPER_NERD_BLOCKS_GYM
+	person_event SPRITE_SUPER_NERD, 4, 25, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, (1 << 3) | PAL_OW_RED, PERSONTYPE_SCRIPT, 0, BlackthornSuperNerdScript, EVENT_BLACKTHORN_CITY_SUPER_NERD_DOES_NOT_BLOCK_GYM
+	person_event SPRITE_GRAMPS, 4, 22, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, PERSONTYPE_SCRIPT, 0, BlackthornGramps1Script, EVENT_BLACKTHORN_CITY_GRAMPS_BLOCKS_DRAGONS_DEN
+	person_event SPRITE_GRAMPS, 4, 23, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, PERSONTYPE_SCRIPT, 0, BlackthornGramps2Script, EVENT_BLACKTHORN_CITY_GRAMPS_NOT_BLOCKING_DRAGONS_DEN
+	person_event SPRITE_BLACK_BELT, 30, 26, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 0, 1, -1, -1, (1 << 3) | PAL_OW_BLUE, PERSONTYPE_SCRIPT, 0, BlackthornBlackBeltScript, -1
 	person_event SPRITE_COOLTRAINER_F, 25, 9, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 0, 2, -1, -1, (1 << 3) | PAL_OW_RED, PERSONTYPE_SCRIPT, 0, BlackthornCooltrainerF1Script, -1
-	person_event SPRITE_YOUNGSTER, 15, 13, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 0, 1, -1, -1, 0, PERSONTYPE_SCRIPT, 0, BlackthornYoungsterScript, -1
-	person_event SPRITE_YOUNGSTER, 20, 22, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, PERSONTYPE_SCRIPT, 0, SantosScript, EVENT_BLACKTHORN_CITY_SANTOS_OF_SATURDAY
+	person_event SPRITE_YOUNGSTER, 5, 10, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 0, 1, -1, -1, 0, PERSONTYPE_SCRIPT, 0, BlackthornYoungsterScript, -1
+	person_event SPRITE_YOUNGSTER, 18, 25, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, PERSONTYPE_SCRIPT, 0, SantosScript, EVENT_BLACKTHORN_CITY_SANTOS_OF_SATURDAY
 	person_event SPRITE_COOLTRAINER_F, 19, 35, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, (1 << 3) | PAL_OW_GREEN, PERSONTYPE_SCRIPT, 0, BlackthornCooltrainerF2Script, -1
+

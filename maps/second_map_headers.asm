@@ -39,7 +39,7 @@
 	map_header_2 LakeofRage, LAKE_OF_RAGE, $5, SOUTH
 	connection south, ROUTE_43, Route43, 5, 0, 10, LAKE_OF_RAGE
 
-	map_header_2 BlackthornCity, BLACKTHORN_CITY, $71, SOUTH | WEST
+	map_header_2 BlackthornCity, BLACKTHORN_CITY, 113, SOUTH | WEST
 	connection south, ROUTE_45, Route45, 0, 0, 10, BLACKTHORN_CITY
 	connection west, ROUTE_44, Route44, 9, 0, 9, BLACKTHORN_CITY
 
@@ -575,7 +575,7 @@
 	map_header_2 Route26DayofWeekSiblingsHouse, ROUTE_26_DAY_OF_WEEK_SIBLINGS_HOUSE, $0, 0
 	map_header_2 Route27SandstormHouse, ROUTE_27_SANDSTORM_HOUSE, $0, 0
 	map_header_2 Route2946Gate, ROUTE_29_46_GATE, $0, 0
-	map_header_2 NewBarkWitchHouse, WITCH_HOUSE, $0, 0
+	map_header_2 NewBarkWitchHouse, WITCH_HOUSE, 0, 0
 	map_header_2 FightingDojo, FIGHTING_DOJO, $0, 0
 	map_header_2 SaffronGym, SAFFRON_GYM, $0, 0
 	map_header_2 SaffronMart, SAFFRON_MART, $0, 0
